@@ -1,38 +1,57 @@
 <script lang="ts">
-	import aircraft from '$lib/assets/images/illustrations/aircraft.svg';
+	import Button from '$lib/components/Button.svelte';
 	import AircraftCard from '$lib/components/Cards/AircraftCard.svelte';
 	import CardList from '$lib/components/Cards/CardList.svelte';
-	import data from '$lib/data/index.json';
+	import Features from '$lib/components/Features.svelte';
+	import Feedback from '$lib/components/Feedback.svelte';
+	import { getTrendingChecklists } from '$lib/utils/checklists/get';
+	import type { PageData } from './$types';
+
+	export let data: PageData;
+	let { trendingChecklists } = data;
+
+	const loadMoreTrending = () => {
+		trendingChecklists = [
+			...trendingChecklists,
+			...getTrendingChecklists(trendingChecklists.length, trendingChecklists.length + 4)
+		];
+	};
 </script>
 
-<main>
-	<section class="hero">
-		<div class="content">
-			<div>
-				<h1>To the skies!</h1>
-				<h2>Find easily a checklist, turn the engines on, and have fun in the skies.</h2>
-				<p>* for simulation purposes only.</p>
-			</div>
-			<img src={aircraft} alt="Checksim logo" />
+<section class="hero">
+	<div class="content">
+		<div>
+			<h1>To the skies!</h1>
+			<h2>Find easily a checklist, turn the engines on, and have fun in the skies.</h2>
+			<p>* for simulation purposes only.</p>
 		</div>
-	</section>
-	<section class="list">
-		<div class="container">
-			<h2>Checklists</h2>
-			<CardList>
-				{#each data as item}
-					<AircraftCard
-						manufacturer={item.aircraft.manufacturer}
-						type={item.aircraft.type}
-						label={item.label}
-						imageUrl={item.aircraft.imageUrl}
-						slug={item.slug}
-					/>
-				{/each}
-			</CardList>
+		<img src="/images/illustrations/aircraft.svg" alt="Checksim logo" />
+	</div>
+</section>
+<section class="list">
+	<div class="container">
+		<h2>Trending checklists</h2>
+		<CardList>
+			{#each trendingChecklists as item}
+				<AircraftCard
+					manufacturer={item.aircraft.manufacturer}
+					type={item.aircraft.type}
+					label={item.label}
+					imageUrl={item.aircraft.imageUrl}
+					slug={item.slug}
+				/>
+			{/each}
+		</CardList>
+		<div class="buttons">
+			<Button label="Load more" variant="secondary" on:click={loadMoreTrending} />
+			<Button label="Explore all checklists" href="/explore" variant="primary" />
 		</div>
-	</section>
-</main>
+	</div>
+</section>
+
+<Features />
+
+<Feedback />
 
 <style lang="postcss">
 	.hero {
@@ -41,14 +60,14 @@
 
 		& .content {
 			@apply h-[560px];
-			@apply container flex flex-nowrap flex-row justify-between items-center pb-36 space-x-16;
+			@apply container flex flex-nowrap flex-col items-center pb-36 pt-12;
 
 			& img {
 				@apply h-56;
 			}
 
 			& h1 {
-				@apply text-white text-7xl font-extrabold font-serif mb-6;
+				@apply text-white text-3xl font-extrabold font-serif mb-6;
 			}
 
 			& h2 {
@@ -58,14 +77,34 @@
 			& p {
 				@apply text-slate-400 text-sm font-serif mt-4;
 			}
+
+			@screen lg {
+				@apply flex-row justify-between space-x-16 pt-0;
+
+				& h1 {
+					@apply text-7xl mb-6;
+				}
+
+				& h2 {
+					@apply text-xl;
+				}
+			}
 		}
 	}
 
 	.list {
-		@apply py-12;
+		@apply pt-8 pb-16;
 
 		& h2 {
 			@apply text-black text-4xl font-serif font-semibold mb-8;
+		}
+
+		& .buttons {
+			@apply flex flex-col gap-4 justify-center mt-12;
+
+			@screen lg {
+				@apply flex-row gap-6;
+			}
 		}
 	}
 </style>

@@ -30,5 +30,165 @@
 				}
 			]
 		}
+	},
+	{
+		"slug": "flybywire-a32nx",
+		"label": "2 FlyByWire A32NX",
+		"aircraft": {
+			"infoUrl": "https://aircraft-database.com/database/aircraft-types/a320neo",
+			"imageUrl": "https://github.com/flybywiresim/a32nx/raw/master/fbw-a32nx/src/base/flybywire-aircraft-a320-neo/SimObjects/AirPlanes/_FlyByWire_A320_NEO-LIVERY/TEXTURE.FBW/thumbnail.jpg",
+			"manufacturer": "Airbus",
+			"type": "A320neo",
+			"model": "A320-251N",
+			"family": "Airplane",
+			"engineType": "Turbofan",
+			"icaoCode": "A20N",
+			"iataCode": "32N"
+		},
+		"checklist": {
+			"sections": [
+				{
+					"label": "Before start",
+					"items": [
+						{
+							"label": "Item A",
+							"value": "Set"
+						},
+						{
+							"label": "B Item",
+							"value": "ON"
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"slug": "flybywire-a32nx",
+		"label": "3 FlyByWire A32NX",
+		"aircraft": {
+			"infoUrl": "https://aircraft-database.com/database/aircraft-types/a320neo",
+			"imageUrl": "https://github.com/flybywiresim/a32nx/raw/master/fbw-a32nx/src/base/flybywire-aircraft-a320-neo/SimObjects/AirPlanes/_FlyByWire_A320_NEO-LIVERY/TEXTURE.FBW/thumbnail.jpg",
+			"manufacturer": "Airbus",
+			"type": "A320neo",
+			"model": "A320-251N",
+			"family": "Airplane",
+			"engineType": "Turbofan",
+			"icaoCode": "A20N",
+			"iataCode": "32N"
+		},
+		"checklist": {
+			"sections": [
+				{
+					"label": "Before start",
+					"items": [
+						{
+							"label": "Item A",
+							"value": "Set"
+						},
+						{
+							"label": "B Item",
+							"value": "ON"
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"slug": "flybywire-a32nx",
+		"label": "4 FlyByWire A32NX",
+		"aircraft": {
+			"infoUrl": "https://aircraft-database.com/database/aircraft-types/a320neo",
+			"imageUrl": "https://github.com/flybywiresim/a32nx/raw/master/fbw-a32nx/src/base/flybywire-aircraft-a320-neo/SimObjects/AirPlanes/_FlyByWire_A320_NEO-LIVERY/TEXTURE.FBW/thumbnail.jpg",
+			"manufacturer": "Airbus",
+			"type": "A320neo",
+			"model": "A320-251N",
+			"family": "Airplane",
+			"engineType": "Turbofan",
+			"icaoCode": "A20N",
+			"iataCode": "32N"
+		},
+		"checklist": {
+			"sections": [
+				{
+					"label": "Before start",
+					"items": [
+						{
+							"label": "Item A",
+							"value": "Set"
+						},
+						{
+							"label": "B Item",
+							"value": "ON"
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"slug": "flybywire-a32nx",
+		"label": "5 FlyByWire A32NX",
+		"aircraft": {
+			"infoUrl": "https://aircraft-database.com/database/aircraft-types/a320neo",
+			"imageUrl": "https://github.com/flybywiresim/a32nx/raw/master/fbw-a32nx/src/base/flybywire-aircraft-a320-neo/SimObjects/AirPlanes/_FlyByWire_A320_NEO-LIVERY/TEXTURE.FBW/thumbnail.jpg",
+			"manufacturer": "Airbus",
+			"type": "A320neo",
+			"model": "A320-251N",
+			"family": "Airplane",
+			"engineType": "Turbofan",
+			"icaoCode": "A20N",
+			"iataCode": "32N"
+		},
+		"checklist": {
+			"sections": [
+				{
+					"label": "Before start",
+					"items": [
+						{
+							"label": "Item A",
+							"value": "Set"
+						},
+						{
+							"label": "B Item",
+							"value": "ON"
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"slug": "flybywire-a32nx",
+		"label": "6 FlyByWire A32NX",
+		"aircraft": {
+			"infoUrl": "https://aircraft-database.com/database/aircraft-types/a320neo",
+			"imageUrl": "https://github.com/flybywiresim/a32nx/raw/master/fbw-a32nx/src/base/flybywire-aircraft-a320-neo/SimObjects/AirPlanes/_FlyByWire_A320_NEO-LIVERY/TEXTURE.FBW/thumbnail.jpg",
+			"manufacturer": "Airbus",
+			"type": "A320neo",
+			"model": "A320-251N",
+			"family": "Airplane",
+			"engineType": "Turbofan",
+			"icaoCode": "A20N",
+			"iataCode": "32N"
+		},
+		"checklist": {
+			"sections": [
+				{
+					"label": "Before start",
+					"items": [
+						{
+							"label": "Item A",
+							"value": "Set"
+						},
+						{
+							"label": "B Item",
+							"value": "ON"
+						}
+					]
+				}
+			]
+		}
 	}
 ]
